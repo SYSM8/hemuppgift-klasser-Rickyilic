@@ -23,7 +23,7 @@ namespace BankAccount
             AccountNumber = accountNumber;
             AccountHolder = accountHolder;
             Balance = balance;
-            Console.WriteLine($"Account number:{accountNumber} \nAccount holder:{accountHolder} \nBalance:{balance}");
+            Console.WriteLine($"Account number:{accountNumber} \nAccount holder:{accountHolder} \nCurrent balance:{balance}");
 
         }
         //Lägg till Metoder
@@ -37,9 +37,10 @@ namespace BankAccount
 
         public void Withdraw(int withdraw)
         {
-            Balance -= withdraw;
+            
             if (Balance > withdraw)
             {
+                Balance -= withdraw;
                 Console.WriteLine("Withdrew:" + withdraw + " New Balance:" + Balance);
             }
             else

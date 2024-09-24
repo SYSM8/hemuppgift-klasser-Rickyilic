@@ -10,7 +10,7 @@ namespace BankAccount
             BankAccount myBankAccount = new BankAccount("45674566", "Ricky", 5000);
 
             myBankAccount.Deposit(500);
-            myBankAccount.Withdraw(1000);
+            myBankAccount.Withdraw(6000);
             myBankAccount.getInfo();
 
         }
